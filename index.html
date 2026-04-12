@@ -147,13 +147,23 @@ html {
     background: rgba(255,255,255,0.04);
     border-radius: 20px;
     overflow: hidden;
+    align-items: center;
 }
 
 .product-img {
-    min-height: 320px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: #0b1f33;
+}
+
+.product-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
 }
 
 .product-text {
@@ -416,7 +426,9 @@ html {
     <div class="product-list">
 
         <div class="product-row">
-            <div class="product-img" style="background-image:url('images/spd.png')"></div>
+            <div class="product-img">
+                <img src="images/spd.png" alt="SPD 半自動秤料系統">
+            </div>
             <div class="product-text">
                 <h3>SPD 半自動秤料系統</h3>
                 <p>
@@ -427,7 +439,9 @@ html {
         </div>
 
         <div class="product-row">
-            <div class="product-img" style="background-image:url('images/ipd.png')"></div>
+            <div class="product-img">
+                <img src="images/ipd.png" alt="IPD 粉體智能計量系統">
+            </div>
             <div class="product-text">
                 <h3>IPD 粉體智能計量系統</h3>
                 <p>
@@ -438,7 +452,9 @@ html {
         </div>
 
         <div class="product-row">
-            <div class="product-img" style="background-image:url('images/ads.png')"></div>
+            <div class="product-img">
+                <img src="images/ads.png" alt="ADS 染料自動倉儲系統">
+            </div>
             <div class="product-text">
                 <h3>ADS 染料自動倉儲系統</h3>
                 <p>
@@ -447,9 +463,11 @@ html {
                 </p>
             </div>
         </div>
-
+        
         <div class="product-row">
-            <div class="product-img" style="background-image:url('images/liquidmate.png')"></div>
+            <div class="product-img">
+                <img src="images/liquidmate.png" alt="染色助劑自動計量系統">
+            </div>
             <div class="product-text">
                 <h3>染色助劑自動計量系統</h3>
                 <p>
@@ -457,8 +475,8 @@ html {
                     並提供完整報表與庫存管理。
                 </p>
             </div>
-        </div>
-
+         </div>
+    
     </div>
 </div>
 
